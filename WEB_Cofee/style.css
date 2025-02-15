@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f7f2e7, #d2b48c);
+    color: #333;
+    padding-top: 60px;
+}
+
+.main-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #8d6748;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-menu li {
+    margin: 0 15px;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.main-menu a:hover {
+    color: #f7f2e7;
+}
+
+header {
+    background: #8d6748;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+section {
+    padding: 40px 20px;
+}
+
+form {
+    background: rgba(255,255,255,0.95);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #8d6748;
+    outline: none;
+}
+
+form input[type="submit"] {
+    background: #8d6748;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background: #a67c52;
+    transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.95);
+    margin-bottom: 30px;
+}
+
+table th,
+table td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s;
+}
+
+table th {
+    background: #8d6748;
+    color: #fff;
+}
+
+table tr:hover {
+    background: #f2e8d5;
+}
+
+table img {
+    max-width: 100px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+table img:hover {
+    transform: scale(1.1);
+}
+
+.success {
+    text-align: center;
+    color: green;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.error {
+    text-align: center;
+    color: red;
+    font-weight: bold;
+    margin: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #8d6748;
+    color: #fff;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    form, table {
+        width: 95%;
+        margin: auto;
+    }
+}
